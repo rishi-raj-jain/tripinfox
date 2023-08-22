@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">Amazing Videos Of Thailand</h1>
         <div className="mt-8 flex flex-row overflow-x-scroll gap-4">
-          {new Array(4).fill(0).map((i, _) => (
+          {new Array(8).fill(0).map((i, _) => (
             <video width="320" height="240" className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto" controls>
               <source src={`/videos/${_ + 1}.mp4`} type="video/mp4" />
             </video>
