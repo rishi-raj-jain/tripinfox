@@ -1,8 +1,15 @@
 import { useEffect, useState } from 'react'
 
 const imageList = [
-  'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80',
-  'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80',
+  '/cover.jpeg',
+  '/gallery/2.jpeg',
+  '/gallery/3.jpeg',
+  '/gallery/4.jpeg',
+  '/gallery/7.jpeg',
+  '/gallery/8.jpeg',
+  '/gallery/9.jpeg',
+  '/gallery/12.jpeg',
+  '/gallery/13.jpeg',
 ]
 
 const Slider = () => {

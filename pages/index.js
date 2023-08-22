@@ -73,8 +73,8 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="w-full flex-col max-w-screen-xl px-10 lg:px-0">
-        <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">A sneak peek into the fun in Thailand</h1>
+      <div className="mt-24 w-full flex-col max-w-screen-xl px-10 md:px-0">
+        <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">A sneak peek into the fun in Thailand</h1>
         <Gallery />
       </div>
       <Footer />
