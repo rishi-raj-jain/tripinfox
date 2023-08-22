@@ -1,7 +1,7 @@
 const Promotional = () => {
   return (
     <div className="w-full flex flex-col items-center bg-gray-50 break-all py-4 lg:py-2">
-      <div className="w-full flex flex-row flex-wrap gap-y-5 lg:gap-y-0 items-center justify-center md:justify-between md:max-w-4xl">
+      <div className="w-full flex flex-row flex-wrap gap-y-5 lg:gap-y-0 items-center justify-center md:justify-between md:max-w-screen-xl md:px-10">
         <div className="gap-x-2 flex flex-row flex-wrap gap-y-1 lg:gap-y-0 items-center justify-center">
           <div className="flex flex-row items-center">
             <svg height="15" width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
