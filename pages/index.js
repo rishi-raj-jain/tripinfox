@@ -31,7 +31,7 @@ const Home = () => {
           <iframe
             width="1000"
             height="1000"
-            frameborder="0"
+            loading="lazy"
             allow="autoplay; encrypted-media"
             src="https://www.youtube.com/embed/VAV-lDPfuco"
             className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
@@ -39,7 +39,7 @@ const Home = () => {
           <iframe
             width="1000"
             height="1000"
-            frameborder="0"
+            loading="lazy"
             allow="autoplay; encrypted-media"
             src="https://www.youtube.com/embed/VAV-lDPfuco"
             className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
@@ -47,7 +47,7 @@ const Home = () => {
           <iframe
             width="1000"
             height="1000"
-            frameborder="0"
+            loading="lazy"
             allow="autoplay; encrypted-media"
             src="https://www.youtube.com/embed/VAV-lDPfuco"
             className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
@@ -55,7 +55,7 @@ const Home = () => {
           <iframe
             width="1000"
             height="1000"
-            frameborder="0"
+            loading="lazy"
             allow="autoplay; encrypted-media"
             src="https://www.youtube.com/embed/VAV-lDPfuco"
             className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
