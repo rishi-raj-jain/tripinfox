@@ -1,6 +1,7 @@
 import Card from 'components/Card'
 import Slider from 'components/Slider'
 import Footer from 'components/Footer'
+import Gallery from 'components/Gallery'
 import Promotional from 'components/Promotional'
 
 const thailandPackages = [
@@ -26,14 +27,14 @@ const Home = () => {
     <>
       <Promotional />
       <Slider />
-      <div className="w-full flex-col max-w-4xl px-10 lg:px-0">
-        <h1 className="mt-8 text-3xl font-extrabold tracking-tight lg:text-4xl">Our Most Popular Packages Thailand</h1>
+      <div className="w-full flex-col max-w-screen-xl px-10 lg:px-0">
+        <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">Our Most Popular Packages Thailand</h1>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {thailandPackages.map((i, _) => (
             <Card key={_} {...i} />
           ))}
         </div>
-        <h1 className="mt-16 text-3xl font-extrabold tracking-tight lg:text-4xl">Amazing Videos Of Thailand</h1>
+        <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">Amazing Videos Of Thailand</h1>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <iframe
             width="1000"
@@ -68,6 +69,10 @@ const Home = () => {
             className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
           />
         </div>
+      </div>
+      <div className="w-full flex-col max-w-screen-xl px-10 lg:px-0">
+        <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">A sneak peek into the fun in Thailand</h1>
+        <Gallery />
       </div>
       <Footer />
     </>
