@@ -8,16 +8,19 @@ const thailandPackages = [
   {
     days: 5,
     nights: 4,
+    image: '/packages/bangkok.jpeg',
     name: 'Captivating BANGKOK and PATTAYA',
   },
   {
     days: 4,
     nights: 3,
+    image: '/packages/koh-samui.jpeg',
     name: 'Mesmerizing KOH SAMUI',
   },
   {
     days: 7,
     nights: 6,
+    image: '/packages/phuket.jpeg',
     name: 'Wonderful PHUKET',
   },
 ]
