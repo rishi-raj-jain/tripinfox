@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="space-y-8 xl:col-span-2">
             <a href="/">
               <span className="sr-only">Tripinfox Logo</span>
-              <img loading="lazy" src="/logo.png" className="h-[80px] border border-gray-100" />
+              <img loading="lazy" src="/symbol.png" className="h-[80px]" />
             </a>
             <p className="max-w-xs text-sm text-gray-500">Where trips are tailor made for you.</p>
             <div className="flex items-center gap-x-4">
