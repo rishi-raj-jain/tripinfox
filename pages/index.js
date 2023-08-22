@@ -3,6 +3,7 @@ import Slider from 'components/Slider'
 import Footer from 'components/Footer'
 import Gallery from 'components/Gallery'
 import Promotional from 'components/Promotional'
+import { useEffect } from 'react'
 
 const thailandPackages = [
   {
@@ -26,6 +27,22 @@ const thailandPackages = [
 ]
 
 const Home = () => {
+  useEffect(() => {
+    const loadVideos = () => {
+      document.querySelectorAll('video').forEach((i) => {
+        i.setAttribute('preload', 'auto')
+      })
+      window.loaded = true
+    }
+    document.addEventListener('DOMContentLoaded', loadVideos)
+    const intervalLoadCheck = setInterval(() => {
+      if (window.loaded) {
+        clearInterval(intervalLoadCheck)
+      } else {
+        loadVideos()
+      }
+    }, 2000)
+  }, [])
   return (
     <>
       <Promotional />
@@ -40,7 +57,7 @@ const Home = () => {
         <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">Amazing Videos Of Thailand</h1>
         <div className="mt-8 flex flex-row overflow-x-scroll gap-4">
           {new Array(8).fill(0).map((i, _) => (
-            <video preload={_ === 0 ? 'auto' : 'none'} width="320" height="240" className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto" controls>
+            <video key={_} preload={_ === 0 ? 'auto' : 'none'} width="320" height="240" className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto" controls>
               <source src={`/videos/${_ + 1}.mp4`} type="video/mp4" />
             </video>
           ))}
