@@ -38,39 +38,12 @@ const Home = () => {
           ))}
         </div>
         <h1 className="mt-24 text-3xl font-extrabold tracking-tight lg:text-4xl">Amazing Videos Of Thailand</h1>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <iframe
-            width="1000"
-            height="1000"
-            loading="lazy"
-            allow="autoplay; encrypted-media"
-            src="https://www.youtube.com/embed/VAV-lDPfuco"
-            className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
-          />
-          <iframe
-            width="1000"
-            height="1000"
-            loading="lazy"
-            allow="autoplay; encrypted-media"
-            src="https://www.youtube.com/embed/VAV-lDPfuco"
-            className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
-          />
-          <iframe
-            width="1000"
-            height="1000"
-            loading="lazy"
-            allow="autoplay; encrypted-media"
-            src="https://www.youtube.com/embed/VAV-lDPfuco"
-            className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
-          />
-          <iframe
-            width="1000"
-            height="1000"
-            loading="lazy"
-            allow="autoplay; encrypted-media"
-            src="https://www.youtube.com/embed/VAV-lDPfuco"
-            className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto"
-          />
+        <div className="mt-8 flex flex-row overflow-x-scroll gap-4">
+          {new Array(4).fill(0).map((i, _) => (
+            <video width="320" height="240" className="rounded max-w-full min-h-[200px] md:min-h-[300px] h-auto" controls>
+              <source src={`/videos/${_ + 1}.mp4`} type="video/mp4" />
+            </video>
+          ))}
         </div>
       </div>
       <div className="mt-24 w-full flex-col max-w-screen-xl px-10 md:px-0">
