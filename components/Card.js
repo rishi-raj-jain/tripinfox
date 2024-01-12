@@ -1,3 +1,5 @@
+import { slug } from "github-slugger"
+
 const Card = ({ name, nights, days, image }) => {
   return (
     <div className="w-full rounded-b bg-gray-50 flex flex-col">
@@ -12,7 +14,7 @@ const Card = ({ name, nights, days, image }) => {
         onMouseOver={(e) => {
           if (window.waa) {
             console.log('dispatch called')
-            window.waa.dispatchEvent('enquire-intent', { name })
+            window.waa.dispatchEvent('enquire-intent', { name: slug(name) })
           }
         }}
         href="tel:+919999228200"
