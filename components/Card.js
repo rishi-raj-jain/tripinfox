@@ -14,6 +14,7 @@ const Card = ({ name, nights, days, image }) => {
         onMouseOver={(e) => {
           if (window.waa) {
             console.log('dispatch called')
+            console.log('enquire-intent', { name: slug(name) })
             window.waa.dispatchEvent('enquire-intent', { name: slug(name) })
           }
         }}
