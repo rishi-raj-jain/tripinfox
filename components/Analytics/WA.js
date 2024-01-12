@@ -6,6 +6,7 @@ const WA = ({ ID }) => {
       const script = document.createElement('script')
       script.id = 'waa'
       script.defer = 'defer'
+      script.setAttribute('data-waa-late-init', 'true')
       script.src = `https://stats.wideangle.co/script/${ID}.js`
       script.onload = () => {
         waaCreate().then((waa) => {
