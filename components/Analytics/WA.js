@@ -17,7 +17,7 @@ const WA = ({ ID }) => {
     }
     // Clean up the script when the component unmounts
     return () => {
-      const existingScript = document.getElementById('waanalytics')
+      const existingScript = document.getElementById('waa')
       if (existingScript) {
         document.body.removeChild(existingScript)
       }
