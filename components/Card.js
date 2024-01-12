@@ -8,7 +8,13 @@ const Card = ({ name, nights, days, image }) => {
           {nights} Nights - {days} Days
         </span>
       </div>
-      <a href="tel:+919999228200" className="m-4 hover:border-black mt-auto max-w-max border rounded px-2 py-1">
+      <a
+        onMouseOver={(e) => {
+          window.waa.dispatchEvent('enquire-intent', { name })
+        }}
+        href="tel:+919999228200"
+        className="m-4 hover:border-black mt-auto max-w-max border rounded px-2 py-1"
+      >
         &#128222; &nbsp; Enquire Now
       </a>
     </div>
